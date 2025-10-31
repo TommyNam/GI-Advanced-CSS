@@ -1,11 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge 2 Stars</title>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <body>
+    <div class="red-background">
+      <div class="stripes">
+        <div class="stripe"></div>
+        <div class="stripe2"></div>
+        <div class="stripe"></div>
+        <div class="stripe2"></div>
+        <div class="stripe"></div>
+        <div class="stripe2"></div>
+        <div class="stripe"></div>
+        <div class="stripe2"></div>
+        <div class="stripe"></div>
+        <div class="stripe2"></div>
+        <div class="stripe"></div>
+        <div class="stripe2"></div>
+        <div class="stripe"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="stars-background">
+        <div class="row">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <div class="row2">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <div class="row">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <div class="row">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <div class="row">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <div class="row2">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <div class="row">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+      </div>
+      <!-- End of stars background -->
+    </div>
+  </body>
+
+  <style>
+    .stars-background {
+      background-color: rgb(29, 98, 163);
+      display: inline-block;
+    }
+    .row {
+      display: flex;
+    }
+    .row2 {
+      display: flex;
+      margin: 0 25px;
+    }
+    .star {
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+      margin: 5px;
+    }
+
+    .red-background {
+      background-color: red;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1500px;
+      height: 1000px;
+      z-index: 0; /* behind everything */
+      display: flex;
+      margin: 8px;
+      border: 1px solid black;
+    }
+
+    .stripe2 {
+      background-color: rgb(255, 255, 255);
+      width: 1500px;
+      height: calc(1000px / 13);
+    }
+
+    .stripe {
+      background-color: rgb(255, 0, 0);
+      width: 1500px;
+      height: calc(1000px / 13);
+    }
+
+    .container {
+      position: relative;
+      z-index: 1; /* on top of red background */
+    }
+  </style>
 </html>
